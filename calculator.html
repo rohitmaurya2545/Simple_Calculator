@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css"/>
+</head>
+<body>
+    <div id="calculator">
+        <input class="input" type="text" >
+       <div class="button_container">
+        <button class="button" onclick="display_container=display_container+'0';document.querySelector('.input').value=display_container">0</button>
+        <button class="button" id="button_color"onclick="display_container=display_container+'/';document.querySelector('.input').value=display_container">/</button>
+        <button class="button"id="button_color"onclick="display_container=display_container+'.';document.querySelector('.input').value=display_container">.</button>
+        <button class="button"id="button_color"onclick="display_container=display_container+'-';document.querySelector('.input').value=display_container">-</button>
+      
+        <button class="button"onclick="display_container=display_container+'7';document.querySelector('.input').value=display_container">7</button>
+        <button class="button"onclick="display_container=display_container+'8';document.querySelector('.input').value=display_container">8</button>
+        <button class="button"onclick="display_container=display_container+'9';document.querySelector('.input').value=display_container">9</button>
+        <button class="button"id="button_color"onclick="display_container=display_container+'+';document.querySelector('.input').value=display_container">+</button>
+        <button class="button"onclick="display_container=display_container+'4';document.querySelector('.input').value=display_container">4</button>
+        <button class="button"onclick="display_container=display_container+'5';document.querySelector('.input').value=display_container">5</button>
+        <button class="button"onclick="display_container=display_container+'6';document.querySelector('.input').value=display_container">6</button>
+        <button class="button" id="button_color"onclick="display_container=display_container+'*';document.querySelector('.input').value=display_container">*</button>
+        <button class="button"onclick="display_container=display_container+'1';document.querySelector('.input').value=display_container">1</button>
+        <button class="button"onclick="display_container=display_container+'2';document.querySelector('.input').value=display_container">2</button>
+        <button class="button"onclick="display_container=display_container+'3';document.querySelector('.input').value=display_container">3</button>
+        <button class="button"id="button_clear"onclick="display_container='';document.querySelector('.input').value=display_container">C</button>
+        <button class="button"id="button_equal"onclick="display_container=eval(display_container);document.querySelector('.input').value=display_container">=</button>
+        </div>
+     <script src="calculator.js"></script>
+</body>
+</html>
